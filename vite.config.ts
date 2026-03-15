@@ -4,6 +4,8 @@ import path from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  base: '/PP/',  // ← เพิ่มบรรทัดนี้! (สำคัญมากสำหรับ GitHub Pages)
+
   plugins: [react(), tailwindcss()],
 
   resolve: {
